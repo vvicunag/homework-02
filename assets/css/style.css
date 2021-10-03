@@ -22,6 +22,7 @@ header h1 {
 nav {
     display: inline-block;
     flex: 0 0 30%;
+    padding: 30px;
 }
 
 header nav ul li {
@@ -36,6 +37,7 @@ main {
 
 .bio-header {
     text-align: center;
+    padding: 10px;
 }
 
 #bio-image {
@@ -43,6 +45,10 @@ main {
     max-height: 413px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px greenyellow;
+}
+
+.more-info p {
+    padding: 10px;
 }
 
 .portfolio-container {
