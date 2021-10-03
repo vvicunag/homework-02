@@ -1,0 +1,159 @@
+:root {
+    --card-header: rgb(55, 91, 158);
+    --card-border: greenyellow;
+    --card-text: rgb(255, 153, 0);
+}
+* {
+    background-color: rgb(33, 41, 46);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: rgb(255, 153, 0);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header h1 {  
+    padding: 30px;
+    font-size: x-large
+}
+
+nav {
+    display: inline-block;
+    flex: 0 0 30%;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+}
+
+
+.bio-header {
+    text-align: center;
+}
+
+#bio-image {
+    max-width: 295px;
+    max-height: 413px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px greenyellow;
+}
+
+.portfolio-container {
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+
+.big-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.big-card h3 {
+    border: solid white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--card-text);
+    position: relative;
+    margin: -30px 30% 0 30%;
+}
+
+.card {
+    display: inline;
+    width: 400px;
+    margin: 2%;
+
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    border: solid white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--card-text);
+    position: relative;
+    margin: -35px 30% 0 30%;
+}
+
+#DJ {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-around;
+    border-top: solid var(--card-border);
+}
+
+#DJ1 {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#DJ2 {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#sisy {
+    margin-top: 10px;
+    min-width: 640px;
+    border-radius: 10px;
+    flex: 1 1 50%;
+}
+
+.big-card img:hover,
+.big-card h3:hover,
+.card img:hover,
+.card h3:hover {
+    box-shadow: inset 0px 0px 8px var(--card-border), 0 0 15px var(--card-border);
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        text-align: center;
+        
+    }    
+    #DJ {
+        justify-content: center;
+    }
+    main {
+        margin: 3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3%;
+    }
+    aside {
+       
+    } 
+    #DJ {
+        justify-content: space-around;
+    }
+}
