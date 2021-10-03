@@ -1,14 +1,17 @@
+/* pre-defined variables for the whole site*/
 :root {
     --card-header: rgb(55, 91, 158);
     --card-border: greenyellow;
     --card-text: rgb(255, 153, 0);
 }
+
 * {
     background-color: rgb(33, 41, 46);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     color: rgb(255, 153, 0);
 }
 
+/* header and navbar that allow for flex properties */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -30,11 +33,12 @@ header nav ul li {
     padding: 10px;
 }
 
+/*Main with flex properties for the sidebar and porfolio container*/
 main {
     display: flex;
 }
 
-
+/* sidebar styling*/
 .bio-header {
     text-align: center;
     padding: 10px;
@@ -59,7 +63,7 @@ main {
     align-items: center
 }
 
-
+/*bigger card styling*/
 .big-card img {
     width: 100%;
     border-radius: 10px;
@@ -75,6 +79,7 @@ main {
     margin: -30px 30% 0 30%;
 }
 
+/* smaller cards styling*/
 .card {
     display: inline;
     width: 400px;
@@ -96,6 +101,7 @@ main {
     margin: -35px 30% 0 30%;
 }
 
+/* DJ section that allows for flex properties in the display of images*/
 #DJ {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +110,7 @@ main {
     border-top: solid var(--card-border);
 }
 
+/* DJ Images with distinct ID*/
 #DJ1 {
     border-radius: 10px;
     margin-top: 5px;
@@ -121,6 +128,7 @@ main {
     flex: 1 1 50%;
 }
 
+/* when cards are hovered onm the light up to give a halo effect*/
 .big-card img:hover,
 .big-card h3:hover,
 .card img:hover,
@@ -133,7 +141,7 @@ footer {
     text-align: center;
 }
 
-
+/* media queries, allow for a responsive layout*/
 @media screen and (min-width: 768px) {
     main {
         flex-direction: column;
