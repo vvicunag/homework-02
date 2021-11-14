@@ -19,7 +19,7 @@ header {
 }
 header h1 {  
     padding: 30px;
-    font-size: x-large
+    font-size: 40px;
 }
 
 nav {
@@ -55,6 +55,14 @@ main {
     padding: 10px;
 }
 
+#html-css-js {
+    width: 200px;
+    background-color: var(--card-text);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
 .portfolio-container {
     margin-left: 5%;
     display: flex;
@@ -65,7 +73,7 @@ main {
 
 /*bigger card styling*/
 .big-card img {
-    width: 100%;
+    width: 800px;
     border-radius: 10px;
 }
 
@@ -102,12 +110,27 @@ main {
 }
 
 /* DJ section that allows for flex properties in the display of images*/
+#DJ-panel {
+    border-top: solid var(--card-border);
+}
+
+#DJ-panel h1 {  
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+
 #DJ {
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
     justify-content: space-around;
-    border-top: solid var(--card-border);
+}
+
+#DJ h1 {
+    padding: 30px;
+    font-size: x-large;
+    margin-left: 32%;
 }
 
 /* DJ Images with distinct ID*/
