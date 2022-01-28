@@ -24,7 +24,7 @@ header h1 {
 
 nav {
     display: inline-block;
-    flex: 0 0 30%;
+    flex: 0 0 40%;
     padding: 30px;
 }
 
@@ -101,12 +101,13 @@ main {
 
 .card h3 {
     border: solid white;
+    width: 220px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     color: var(--card-text);
     position: relative;
-    margin: -35px 30% 0 30%;
+    margin: -35px 50px 0 92px;
 }
 
 /* DJ section that allows for flex properties in the display of images*/
@@ -144,11 +145,22 @@ main {
     margin-top: 5px;
 }
 
+#pinta {
+    margin-top: 10px;
+    min-width: 640px;
+    border-radius: 10px;
+    flex: 1 1 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 #sisy {
     margin-top: 10px;
     min-width: 640px;
     border-radius: 10px;
     flex: 1 1 50%;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 /* when cards are hovered onm the light up to give a halo effect*/
