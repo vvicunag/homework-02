@@ -45,8 +45,6 @@ main {
 }
 
 #bio-image {
-    max-width: 295px;
-    max-height: 413px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px greenyellow;
 }
@@ -91,7 +89,7 @@ main {
 .card {
     display: inline;
     width: 400px;
-    margin: 2%;
+    margin: 1.5%;
 
 }
 .card img {
